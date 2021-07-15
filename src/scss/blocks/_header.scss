@@ -1,0 +1,54 @@
+.header {
+  padding-top: 50px;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  margin-right: 10px;
+}
+
+.header__logo-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $titleColor;
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__nav-link {
+  color: $textColor;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__login-link {
+  margin-right: 30px;
+  text-decoration: none;
+  color: $titleColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
