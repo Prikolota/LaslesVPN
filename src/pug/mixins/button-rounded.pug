@@ -1,2 +1,5 @@
-//- mixin button-rounded(text, link="#")
-//-     a(href= link).button-rounded #{text}
+mixin button-rounded(text, itemClass)
+    if itemClass 
+        button.button-rounded.button-rounded--p #{text}
+    else 
+        button.button-rounded #{text}

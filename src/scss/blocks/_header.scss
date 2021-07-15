@@ -1,8 +1,17 @@
 .header {
+  width: 100%;
+}
+
+.header__container {
+  max-width: 1210px;
+  width: 100%;
   padding-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header__row {
+  margin-bottom: 89px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +51,11 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+  }
 }
 
 .header__login-link {
@@ -51,4 +65,30 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+.header-start__row {
+  margin-bottom: 102px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-start__content {
+  width: 45%;
+}
+
+.header-start__title {
+  margin-bottom: 30px;
+}
+
+.header-start__desc {
+  margin-bottom: 50px;
+  & p {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  & span {
+    font-weight: 500;
+  }
 }
