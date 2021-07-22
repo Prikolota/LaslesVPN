@@ -1,0 +1,76 @@
+.section-price {
+  height: 100%;
+  padding-top: 81px;
+  padding-bottom: 150px;
+  background: linear-gradient(to bottom, #e8e8e8, #ffffff);
+}
+
+.section-price__header {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 555px;
+  margin-bottom: 60px;
+}
+
+.section-price__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.package {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.package__img {
+  margin-bottom: 30px;
+}
+
+.package__title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: $titleColor;
+}
+
+.package__list {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.package__list-item {
+  padding-left: 44px;
+  margin-bottom: 15px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./../img/greenCheck.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.package__footer {
+  margin-bottom: 20px;
+}
+
+.package__price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: $titleColor;
+}

@@ -1,0 +1,25 @@
+section.section-price 
+    .container 
+        .section-price__header 
+            h2.section-price__title.title-2 Choose Your Plan
+            p.subtitle Let's choose the package that is best for you and explore it happily and cheerfully.
+        .section-price__row 
+            .package
+                img(src="./../img/Free.png", alt="").package__img
+                h4.package__title Free Plan
+                +list([{text: "Unlimited Bandwitch"}, {text: "Encrypted Connection"}, {text: "No Traffic Logs"}, {text: "Works on All Devices"}])
+                .package__footer 
+                    span.package__price Free
+                    span.package__period
+                .package__button 
+                    +button-rounded("Select", ".button-rounded--p")
+            .package
+                img(src="./../img/Free.png", alt="").package__img
+                h4.package__title Free Plan
+                +list([{text: "Unlimited Bandwitch"}, {text: "Encrypted Connection"}, {text: "No Traffic Logs"}, {text: "Works on All Devices"}])
+                .package__footer 
+                    span.package__price Free
+                    span.package__period
+                .package__button 
+                    +button-rounded("Select", ".button-rounded--p")
+                
