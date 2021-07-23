@@ -24,6 +24,16 @@
 .button-rounded--p {
   padding-right: 63px;
   padding-left: 63px;
+  font-weight: 700;
+  border: 2px solid $accentColor;
+}
+
+.button-rounded--active {
+  padding-right: 63px;
+  padding-left: 63px;
+  background: #F53838;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .button-big {

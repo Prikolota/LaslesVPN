@@ -1,25 +1,15 @@
+- const packageFree = {addClass: "", title: "Free Plan", img:"Free.png", items: ["Unlimited Bandwitch", "Encrypted Connection", "No Traffic Logs", "Works on All Devices"],  price: "Free", period: "", button: {addClass:"button-rounded--p", textBtn: "Select"}}
+- const packageStandart = {addClass: "", title: "Standart Plan", img:"Standard.png", items: ["Unlimited Bandwitch", "Encrypted Connection", "No Traffic Logs", "Works on All Devices", "Connect Anyware"],  price: "$9 ", period: "/ mo", button: {addClass:"button-rounded--p", textBtn: "Select"}}
+- const packagePremium = {addClass: "package--active", title: "Premium Plan", img:"Premium.png", items: ["Unlimited Bandwitch", "Encrypted Connection", "No Traffic Logs", "Works on All Devices", "Connect Anyware", "Get New Features"],  price: "$12 ", period: "/ mo", button: {addClass:"button-rounded--active", textBtn: "Select"}}
+
 section.section-price 
     .container 
         .section-price__header 
             h2.section-price__title.title-2 Choose Your Plan
             p.subtitle Let's choose the package that is best for you and explore it happily and cheerfully.
-        .section-price__row 
-            .package
-                img(src="./../img/Free.png", alt="").package__img
-                h4.package__title Free Plan
-                +list([{text: "Unlimited Bandwitch"}, {text: "Encrypted Connection"}, {text: "No Traffic Logs"}, {text: "Works on All Devices"}])
-                .package__footer 
-                    span.package__price Free
-                    span.package__period
-                .package__button 
-                    +button-rounded("Select", ".button-rounded--p")
-            .package
-                img(src="./../img/Free.png", alt="").package__img
-                h4.package__title Free Plan
-                +list([{text: "Unlimited Bandwitch"}, {text: "Encrypted Connection"}, {text: "No Traffic Logs"}, {text: "Works on All Devices"}])
-                .package__footer 
-                    span.package__price Free
-                    span.package__period
-                .package__button 
-                    +button-rounded("Select", ".button-rounded--p")
+        .section-price__row     
+            +plan(packageFree)
+            +plan(packageStandart)
+            +plan(packagePremium)
+            
                 

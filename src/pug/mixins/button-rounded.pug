@@ -1,5 +1,9 @@
-mixin button-rounded(text, itemClass)
-    if itemClass 
-        button.button-rounded.button-rounded--p #{text}
+mixin button-rounded(text, buttonClass)
+    if buttonClass 
+        button.button-rounded(class=""+itemClass) #{text}
     else 
         button.button-rounded #{text}
+    //- if itemClass 
+    //-     button.button-rounded.button-rounded--active #{text}
+    //- else 
+    //-     button.button-rounded #{text}

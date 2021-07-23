@@ -1,0 +1,13 @@
+mixin plan(obj)
+    .package(class=""+obj.addClass)
+        img(src="./../img/" + obj.img, alt="title").package__img
+        h4.package__title  #{obj.title}
+        ul.package__list 
+            each item in obj.items
+                li.package__list-item #{item}
+        .package__footer 
+            span.package__price #{obj.price}
+            span.package__period #{obj.period}
+        .package__button  
+            button.button-rounded(class=""+obj.button.addClass) #{obj.button.textBtn}
+                

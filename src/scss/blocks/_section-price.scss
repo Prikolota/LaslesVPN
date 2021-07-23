@@ -19,12 +19,25 @@
 }
 
 .package {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  height: 760px;
+  padding: 80px 70px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  background: #FFFFFF;
+
+  transition: .3s;
+
+  &:hover {
+    border: 2px solid #F53838;
+  }
+}
+
+.package--active {
+  border: 2px solid #F53838;
 }
 
 .package__img {
@@ -40,6 +53,7 @@
 }
 
 .package__list {
+  margin-bottom: auto;
   font-size: 14px;
   line-height: 30px;
   text-align: left;
@@ -47,7 +61,7 @@
 
 .package__list-item {
   padding-left: 44px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
 
   &:before {
@@ -62,6 +76,10 @@
     background-image: url(./../img/greenCheck.svg);
     background-repeat: no-repeat;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .package__footer {
@@ -73,4 +91,9 @@
   font-size: 25px;
   line-height: 30px;
   color: $titleColor;
+}
+
+.package__period {
+  font-size: 25px;
+  line-height: 30px;
 }
