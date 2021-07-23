@@ -1,0 +1,35 @@
+.section-map {
+  padding-bottom: 50px;
+}
+
+.section-map__header {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 555px;
+  margin-bottom: 156px;
+  & span {
+    font-weight: 500;
+  }
+}
+
+.section-map__title {
+  margin-bottom: 20px;
+  width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-map__img {
+  margin-bottom: 36px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sposors__item:not(:last-child) {
+    margin-right: 48px;
+}
