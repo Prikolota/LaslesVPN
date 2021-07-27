@@ -1,0 +1,98 @@
+.section-comments {
+}
+
+.container-big {
+  width: 1330px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-comments__header {
+  margin-bottom: 60px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 555px;
+}
+
+.section-comments__title {
+  margin-bottom: 20px;
+  width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-comments__row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.comment-card {
+  padding: 30px;
+  margin-bottom: 60px;
+  width: 400px;
+  height: 230px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  transition: .3s ease-in;
+  // & + .comment-card {
+  //   margin-left: 30px;
+  // }
+
+  &:hover {
+    border: 2px solid $accentColor;
+    box-shadow: 0px 70px 114px -40px rgba(13, 16, 37, 0.06);
+  }
+}
+
+.comment-card--active {
+  border: 2px solid $accentColor;
+  box-shadow: 0px 70px 114px -40px rgba(13, 16, 37, 0.06);
+}
+
+.comment-card__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.comment-card__info {
+    display: flex;
+}
+
+.comment-card__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.comment-card__user {
+
+  & .name {
+    font-weight: 500;
+    font-size: 18px;
+    color: $titleColor;
+  }
+
+  & .country {
+    font-size: 14px;
+  }
+}
+
+.comment-card__rate .rate {
+    font-size: 16px;
+    color: $titleColor;
+    margin-right: 10px;
+}
+
+.comment-card__review p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: $titleColor;
+}

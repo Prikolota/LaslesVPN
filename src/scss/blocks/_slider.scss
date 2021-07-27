@@ -1,0 +1,88 @@
+.slider {
+  position: relative;
+}
+
+.slider__control {
+  position: relative;
+  width: 1140px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // margin-right: auto;
+  // margin-left: auto;
+}
+
+.slider__btns {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.slider__arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f53838;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in;
+
+  .slider-arrow__svg {
+    fill: $accentColor;
+  }
+
+  &--left {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    background-color: $accentColor;
+
+    .slider-arrow__svg {
+      fill: #fff;
+    }
+  }
+}
+.slider.owl-theme .owl-dots .owl-dot span {
+  width: 0;
+  height: 0;
+}
+
+.slider .owl-dots {
+  position: absolute;
+  bottom: -35px;
+  display: flex;
+}
+
+.slider .owl-dots .owl-dot {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  background: #dde0e4;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $accentColor;
+  }
+}
+
+.slider .owl-dot.active {
+  width: 45px;
+  height: 15px;
+  background-color: $accentColor;
+  border-radius: 7.5px;
+}
+
+// .slider .owl-item {
+//   width: 400px;
+//   height: 230px;
+// }

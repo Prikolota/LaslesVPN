@@ -2,7 +2,6 @@
   height: 100%;
   padding-top: 81px;
   padding-bottom: 150px;
-  
 }
 
 .section-price__header {
@@ -15,7 +14,7 @@
 
 .section-price__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .package {
@@ -27,17 +26,20 @@
   text-align: center;
   border: 2px solid #dddddd;
   border-radius: 10px;
-  background: #FFFFFF;
+  background: #ffffff;
 
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
-    border: 2px solid #F53838;
+    border: 2px solid #f53838;
   }
+ & + .package {
+   margin-left: 50px;
+ }
 }
 
 .package--active {
-  border: 2px solid #F53838;
+  border: 2px solid #f53838;
 }
 
 .package__img {
