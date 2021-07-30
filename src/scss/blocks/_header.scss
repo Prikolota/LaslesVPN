@@ -22,21 +22,6 @@
   align-items: center;
 }
 
-.header__logo-img {
-  margin-right: 10px;
-}
-
-.header__logo-text {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: $titleColor;
-
-  & span {
-    font-weight: 700;
-  }
-}
-
 .header__nav {
   display: flex;
   justify-content: space-between;

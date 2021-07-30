@@ -1,4 +1,85 @@
 .footer {
   padding-top: 180px;
   padding-bottom: 100px;
+  background: rgba(248, 248, 248, 1);
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo__wrapper {
+  width: 340px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo__info {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 30px;
+
+  & span {
+    font-weight: 500;
+  }
+}
+
+.footer-logo__social {
+  margin-bottom: 30px;
+}
+
+.footer__widgets-wrapper {
+  display: flex;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 30px;
+  color: #afb5c0;
+
+  & span {
+    font-weight: 500;
+  }
+}
+
+.footer-widget + .footer-widget {
+  margin-left: 126px;
+}
+
+.footer-widget__title {
+  margin-bottom: 20px;
+}
+
+.footer-widget__product {
+  width: 74px;
+}
+
+.footer-widget__engage {
+  width: 124px;
+}
+
+.footer-widget__money {
+  width: 121px;
+}
+
+.footer-widget__item {
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-widget__link {
+  text-decoration: none;
+  color: #4f5665;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+  }
 }

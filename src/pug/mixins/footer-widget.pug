@@ -1,0 +1,7 @@
+mixin footer-widget(name, navItems, widgetClass)
+    .footer-widget(class=""+widgetClass)
+        h4.footer-widget__title.title-3 #{name}
+        ul.footer-widget   
+            each item in navItems
+                li.footer-widget__item 
+                    a(href= item.link).footer-widget__link #{item.title}   

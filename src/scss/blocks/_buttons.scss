@@ -54,9 +54,6 @@
   transition: all 0.2s ease-in;
 
   &:hover {
-    // background-color: #fff;
-    // color: $accentColor;
-    // box-shadow: 0 26px 74px rgba(245, 56, 56, 0.25);
     background-color: darken($accentColor, 20%);
   }
 }
