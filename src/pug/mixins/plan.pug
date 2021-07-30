@@ -1,6 +1,6 @@
 mixin plan(obj)
     .package(class=""+obj.addClass)
-        img(src="./../img/" + obj.img, alt="title").package__img
+        img(src="./img/" + obj.img, alt="title").package__img
         h4.package__title  #{obj.title}
         ul.package__list 
             each item in obj.items
