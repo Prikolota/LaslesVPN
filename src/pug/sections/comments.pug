@@ -4,7 +4,6 @@ section.section-comments
             h2.section-comments__title.title-2 Trusted by Thousands of Happy Customer
             p.subtitle These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
         .section-comments__slider  
-            //- .section-comments__row 
             .slider(id="clients-slider").owl-carousel.owl-theme
                 .slider-item
                     +user("user-1.jpg", "Viezh Robert", "Warsaw, Poland", "4.5", "“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.")
@@ -42,6 +41,12 @@ section.section-comments
                         +arrowLeft  
                     buttonid(id='sliderNext').slider__arrow.slider__arrow--right.owl-next
                         +arrowRight
+        .section-comments__subscribe
+            .subscribe-info 
+                h2.subscribe-info__title.title-2 Subscribe Now for Get Special Features!
+                p.subscribe-info__text Let's subscribe with us and find the fun.
+            +button-big('Subscribe Now') 
+                    
 
 
                     

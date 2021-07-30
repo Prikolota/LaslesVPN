@@ -1,4 +1,6 @@
 .section-comments {
+  position: relative;
+  padding-bottom: 182px;
 }
 
 .container-big {
@@ -32,15 +34,11 @@
 
 .comment-card {
   padding: 30px;
-  margin-bottom: 60px;
   width: 400px;
   height: 230px;
   border: 2px solid #dddddd;
   border-radius: 10px;
-  transition: .3s ease-in;
-  // & + .comment-card {
-  //   margin-left: 30px;
-  // }
+  transition: 0.3s ease-in;
 
   &:hover {
     border: 2px solid $accentColor;
@@ -61,7 +59,7 @@
 }
 
 .comment-card__info {
-    display: flex;
+  display: flex;
 }
 
 .comment-card__avatar {
@@ -73,7 +71,6 @@
 }
 
 .comment-card__user {
-
   & .name {
     font-weight: 500;
     font-size: 18px;
@@ -86,13 +83,42 @@
 }
 
 .comment-card__rate .rate {
-    font-size: 16px;
-    color: $titleColor;
-    margin-right: 10px;
+  font-size: 16px;
+  color: $titleColor;
+  margin-right: 10px;
 }
 
 .comment-card__review p {
   font-size: 16px;
   line-height: 1.6;
   color: $titleColor;
+}
+
+.section-comments__subscribe {
+  width: 1140px;
+  padding: 51px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -117px;
+  border-radius: 10px;
+  box-shadow: 0 39px 114px rgba(13, 16, 37, 0.06);
+  ;
+}
+
+.subscribe-info {
+  width: 372px;
+}
+
+.subscribe-info__title.title-2 {
+  margin-bottom: 10px;
+  line-height: 45px;
+}
+
+.subscribe-info__text {
+  font-size: 16px;
+  line-height: 30px;
 }

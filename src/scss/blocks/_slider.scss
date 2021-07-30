@@ -3,19 +3,18 @@
 }
 
 .slider__control {
-  position: relative;
   width: 1140px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // margin-right: auto;
-  // margin-left: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .slider__btns {
-  position: absolute;
   display: flex;
-  right: 0;
+
 }
 
 .slider__arrow {
@@ -53,7 +52,7 @@
 
 .slider .owl-dots {
   position: absolute;
-  bottom: -35px;
+  bottom: -95px;
   display: flex;
 }
 
